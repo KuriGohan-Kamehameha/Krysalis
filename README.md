@@ -100,7 +100,7 @@
 ---
 
 
-The complete platform list is available in [platforms.json](platforms.json).
+The complete platform list is available in [index.json](platforms/index.json).
 
 ---
 
