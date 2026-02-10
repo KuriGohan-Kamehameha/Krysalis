@@ -3,8 +3,8 @@
   "revisionNumber": 5,
   "platform": {
     "name": "Game & Watch",
-    "uniqueId": "gw",
-    "shortname": "gw",
+    "uniqueId": "gameandwatch",
+    "shortname": "gameandwatch",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [

@@ -3,8 +3,8 @@
   "revisionNumber": 4,
   "platform": {
     "name": "Atari Jaguar CD",
-    "uniqueId": "jaguarcd",
-    "shortname": "jaguarcd",
+    "uniqueId": "atarijaguarcd",
+    "shortname": "atarijaguarcd",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [

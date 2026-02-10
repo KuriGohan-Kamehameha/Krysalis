@@ -3,8 +3,8 @@
   "revisionNumber": 3,
   "platform": {
     "name": "Philips Videopac+ G7400",
-    "uniqueId": "g7400",
-    "shortname": "g7400",
+    "uniqueId": "videopac",
+    "shortname": "videopac",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [

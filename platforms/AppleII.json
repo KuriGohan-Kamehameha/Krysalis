@@ -3,8 +3,8 @@
   "revisionNumber": 2,
   "platform": {
     "name": "Apple II",
-    "uniqueId": "appleii",
-    "shortname": "appleii",
+    "uniqueId": "apple2",
+    "shortname": "apple2",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [],

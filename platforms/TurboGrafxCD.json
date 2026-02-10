@@ -3,8 +3,8 @@
   "revisionNumber": 7,
   "platform": {
     "name": "TurboGrafx-CD",
-    "uniqueId": "tgcd",
-    "shortname": "tgcd",
+    "uniqueId": "tg-cd",
+    "shortname": "tg-cd",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [

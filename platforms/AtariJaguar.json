@@ -3,8 +3,8 @@
   "revisionNumber": 4,
   "platform": {
     "name": "Atari Jaguar",
-    "uniqueId": "jaguar",
-    "shortname": "jaguar",
+    "uniqueId": "atarijaguar",
+    "shortname": "atarijaguar",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [

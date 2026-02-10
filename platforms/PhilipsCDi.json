@@ -3,8 +3,8 @@
   "revisionNumber": 5,
   "platform": {
     "name": "Philips CD-i",
-    "uniqueId": "cdi",
-    "shortname": "cdi",
+    "uniqueId": "cdimono1",
+    "shortname": "cdimono1",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [
