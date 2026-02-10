@@ -11,15 +11,15 @@
     {
       "filename": "AmstradCPC.json",
       "platformName": "Amstrad CPC",
-      "platformShortname": "cpc",
-      "platformUniqueId": "cpc",
+      "platformShortname": "amstradcpc",
+      "platformUniqueId": "amstradcpc",
       "revisionNumber": 6
     },
     {
       "filename": "AppleII.json",
       "platformName": "Apple II",
-      "platformShortname": "appleii",
-      "platformUniqueId": "appleii",
+      "platformShortname": "apple2",
+      "platformUniqueId": "apple2",
       "revisionNumber": 2
     },
     {
@@ -60,22 +60,22 @@
     {
       "filename": "AtariJaguar.json",
       "platformName": "Atari Jaguar",
-      "platformShortname": "jaguar",
-      "platformUniqueId": "jaguar",
+      "platformShortname": "atarijaguar",
+      "platformUniqueId": "atarijaguar",
       "revisionNumber": 4
     },
     {
       "filename": "AtariJaguarCD.json",
       "platformName": "Atari Jaguar CD",
-      "platformShortname": "jaguarcd",
-      "platformUniqueId": "jaguarcd",
+      "platformShortname": "atarijaguarcd",
+      "platformUniqueId": "atarijaguarcd",
       "revisionNumber": 4
     },
     {
       "filename": "AtariLynx.json",
       "platformName": "Atari Lynx",
-      "platformShortname": "lynx",
-      "platformUniqueId": "lynx",
+      "platformShortname": "atarilynx",
+      "platformUniqueId": "atarilynx",
       "revisionNumber": 8
     },
     {
@@ -158,8 +158,8 @@
     {
       "filename": "ColecoVision.json",
       "platformName": "ColecoVision",
-      "platformShortname": "coleco",
-      "platformUniqueId": "coleco",
+      "platformShortname": "colecovision",
+      "platformUniqueId": "colecovision",
       "revisionNumber": 4
     },
     {
@@ -256,8 +256,8 @@
     {
       "filename": "Game&Watch.json",
       "platformName": "Game & Watch",
-      "platformShortname": "gw",
-      "platformUniqueId": "gw",
+      "platformShortname": "gameandwatch",
+      "platformUniqueId": "gameandwatch",
       "revisionNumber": 5
     },
     {
@@ -417,8 +417,8 @@
     {
       "filename": "Nintendo3DS.json",
       "platformName": "Nintendo 3DS",
-      "platformShortname": "3ds",
-      "platformUniqueId": "3ds",
+      "platformShortname": "n3ds",
+      "platformUniqueId": "n3ds",
       "revisionNumber": 13
     },
     {
@@ -508,15 +508,15 @@
     {
       "filename": "PhilipsCDi.json",
       "platformName": "Philips CD-i",
-      "platformShortname": "cdi",
-      "platformUniqueId": "cdi",
+      "platformShortname": "cdimono1",
+      "platformUniqueId": "cdimono1",
       "revisionNumber": 5
     },
     {
       "filename": "PhilipsVideopacG7400.json",
       "platformName": "Philips Videopac+ G7400",
-      "platformShortname": "g7400",
-      "platformUniqueId": "g7400",
+      "platformShortname": "videopac",
+      "platformUniqueId": "videopac",
       "revisionNumber": 3
     },
     {
@@ -606,8 +606,8 @@
     {
       "filename": "SegaMasterSystem.json",
       "platformName": "Sega Master System",
-      "platformShortname": "master",
-      "platformUniqueId": "master",
+      "platformShortname": "mastersystem",
+      "platformUniqueId": "mastersystem",
       "revisionNumber": 10
     },
     {
@@ -627,8 +627,8 @@
     {
       "filename": "SegaSG1000.json",
       "platformName": "Sega SG-1000",
-      "platformShortname": "sg1000",
-      "platformUniqueId": "sg1000",
+      "platformShortname": "sg-1000",
+      "platformUniqueId": "sg-1000",
       "revisionNumber": 6
     },
     {
@@ -655,8 +655,8 @@
     {
       "filename": "SonyPSVita.json",
       "platformName": "Sony PS Vita",
-      "platformShortname": "vita",
-      "platformUniqueId": "vita",
+      "platformShortname": "psvita",
+      "platformUniqueId": "psvita",
       "revisionNumber": 6
     },
     {
@@ -746,8 +746,8 @@
     {
       "filename": "TurboGrafxCD.json",
       "platformName": "TurboGrafx-CD",
-      "platformShortname": "tgcd",
-      "platformUniqueId": "tgcd",
+      "platformShortname": "tg-cd",
+      "platformUniqueId": "tg-cd",
       "revisionNumber": 7
     },
     {
@@ -809,15 +809,15 @@
     {
       "filename": "WonderSwan.json",
       "platformName": "WonderSwan",
-      "platformShortname": "ws",
-      "platformUniqueId": "ws",
+      "platformShortname": "wonderswan",
+      "platformUniqueId": "wonderswan",
       "revisionNumber": 5
     },
     {
       "filename": "WonderSwanColor.json",
       "platformName": "WonderSwan Color",
-      "platformShortname": "wsc",
-      "platformUniqueId": "wsc",
+      "platformShortname": "wonderswancolor",
+      "platformUniqueId": "wonderswancolor",
       "revisionNumber": 5
     },
     {
