@@ -33,7 +33,6 @@
       "amStartArguments": "-n io.github.lime3ds.android/org.citra.citra_emu.activities.EmulationActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}\n  --activity-clear-task\n  --activity-clear-top\n",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": true,
-      "hasToQuit": true,
       "extra": ""
     },
     {
@@ -44,7 +43,6 @@
       "amStartArguments": "-n org.azahar_emu.azahar/org.citra.citra_emu.activities.EmulationActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}\n  --activity-clear-task\n  --activity-clear-top\n",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": true,
-      "hasToQuit": true,
       "extra": ""
     },
     {
