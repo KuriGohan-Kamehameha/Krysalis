@@ -35,7 +35,6 @@
       "amStartArguments": "-a me.magnum.melonds.LAUNCH_ROM\n-n me.magnum.melonds/.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "hasToQuit": true,
       "extra": ""
     },
     {
@@ -46,7 +45,6 @@
       "amStartArguments": "-a me.magnum.melondualds.LAUNCH_ROM\n-n me.magnum.melonds/.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "hasToQuit": true,
       "extra": ""
     },
     {
