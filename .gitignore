@@ -1,0 +1,36 @@
+# Build output
+build/
+dist/
+*.apk
+*.aab
+
+# Signing keys - never commit these
+*.keystore
+*.jks
+*.pem
+*.p12
+
+# Tools
+apktool*.jar
+uber-apk-signer*.jar
+smali*.jar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.iml
+.vscode/
+
+# The 3rd party smali dirs (classes1-3) and native libs are not tracked.
+# They are extracted from the original APK at build time by build.sh.
+# Only smali_classes4/rip/moth/cocoonshell/ (Cocoon app code) is tracked.
+smali/
+smali_classes2/
+smali_classes3/
+lib/
+res/raw/
+original/
+unknown/
