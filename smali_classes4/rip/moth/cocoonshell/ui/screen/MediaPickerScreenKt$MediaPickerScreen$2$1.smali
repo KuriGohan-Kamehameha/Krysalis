@@ -1,0 +1,302 @@
+.class final Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "MediaPickerScreen.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt;->MediaPickerScreen(Lrip/moth/cocoonshell/data/model/Game;Lrip/moth/cocoonshell/ui/screen/MediaType;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "Lkotlinx/coroutines/CoroutineScope;"
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "rip.moth.cocoonshell.ui.screen.MediaPickerScreenKt$MediaPickerScreen$2$1"
+    f = "MediaPickerScreen.kt"
+    i = {}
+    l = {}
+    m = "invokeSuspend"
+    n = {}
+    s = {}
+.end annotation
+
+
+# instance fields
+.field final synthetic $context:Landroid/content/Context;
+
+.field final synthetic $db:Lrip/moth/cocoonshell/data/local/CocoonDatabase;
+
+.field final synthetic $game:Lrip/moth/cocoonshell/data/model/Game;
+
+.field final synthetic $isLoading$delegate:Landroidx/compose/runtime/MutableState;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/MutableState<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $mediaItems$delegate:Landroidx/compose/runtime/MutableState;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/MutableState<",
+            "Ljava/util/List<",
+            "Lrip/moth/cocoonshell/ui/screen/MediaItem;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $mediaType:Lrip/moth/cocoonshell/ui/screen/MediaType;
+
+.field final synthetic $scope:Lkotlinx/coroutines/CoroutineScope;
+
+.field final synthetic $selectedImageIndex$delegate:Landroidx/compose/runtime/MutableIntState;
+
+.field final synthetic $selectedSource$delegate:Landroidx/compose/runtime/MutableState;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/MutableState<",
+            "Lrip/moth/cocoonshell/ui/screen/MediaSource;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field label:I
+
+
+# direct methods
+.method constructor <init>(Landroidx/compose/runtime/MutableState;Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableIntState;Lrip/moth/cocoonshell/data/model/Game;Lrip/moth/cocoonshell/ui/screen/MediaType;Lrip/moth/cocoonshell/data/local/CocoonDatabase;Landroid/content/Context;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/MutableState<",
+            "Lrip/moth/cocoonshell/ui/screen/MediaSource;",
+            ">;",
+            "Lkotlinx/coroutines/CoroutineScope;",
+            "Landroidx/compose/runtime/MutableState<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Landroidx/compose/runtime/MutableState<",
+            "Ljava/util/List<",
+            "Lrip/moth/cocoonshell/ui/screen/MediaItem;",
+            ">;>;",
+            "Landroidx/compose/runtime/MutableIntState;",
+            "Lrip/moth/cocoonshell/data/model/Game;",
+            "Lrip/moth/cocoonshell/ui/screen/MediaType;",
+            "Lrip/moth/cocoonshell/data/local/CocoonDatabase;",
+            "Landroid/content/Context;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedSource$delegate:Landroidx/compose/runtime/MutableState;
+
+    iput-object p2, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
+
+    iput-object p3, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$isLoading$delegate:Landroidx/compose/runtime/MutableState;
+
+    iput-object p4, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaItems$delegate:Landroidx/compose/runtime/MutableState;
+
+    iput-object p5, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedImageIndex$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    iput-object p6, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$game:Lrip/moth/cocoonshell/data/model/Game;
+
+    iput-object p7, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaType:Lrip/moth/cocoonshell/ui/screen/MediaType;
+
+    iput-object p8, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$db:Lrip/moth/cocoonshell/data/local/CocoonDatabase;
+
+    iput-object p9, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$context:Landroid/content/Context;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p10}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;
+
+    iget-object v1, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedSource$delegate:Landroidx/compose/runtime/MutableState;
+
+    iget-object v2, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
+
+    iget-object v3, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$isLoading$delegate:Landroidx/compose/runtime/MutableState;
+
+    iget-object v4, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaItems$delegate:Landroidx/compose/runtime/MutableState;
+
+    iget-object v5, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedImageIndex$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    iget-object v6, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$game:Lrip/moth/cocoonshell/data/model/Game;
+
+    iget-object v7, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaType:Lrip/moth/cocoonshell/ui/screen/MediaType;
+
+    iget-object v8, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$db:Lrip/moth/cocoonshell/data/local/CocoonDatabase;
+
+    iget-object v9, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$context:Landroid/content/Context;
+
+    move-object v10, p2
+
+    invoke-direct/range {v0 .. v10}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;-><init>(Landroidx/compose/runtime/MutableState;Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableIntState;Lrip/moth/cocoonshell/data/model/Game;Lrip/moth/cocoonshell/ui/screen/MediaType;Lrip/moth/cocoonshell/data/local/CocoonDatabase;Landroid/content/Context;Lkotlin/coroutines/Continuation;)V
+
+    check-cast v0, Lkotlin/coroutines/Continuation;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/CoroutineScope;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;
+
+    sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, p2}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 10
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    .line 316
+    iget v0, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->label:I
+
+    if-nez v0, :cond_0
+
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 317
+    iget-object v1, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
+
+    iget-object v2, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$isLoading$delegate:Landroidx/compose/runtime/MutableState;
+
+    iget-object v3, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaItems$delegate:Landroidx/compose/runtime/MutableState;
+
+    iget-object v4, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedImageIndex$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    iget-object v5, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$game:Lrip/moth/cocoonshell/data/model/Game;
+
+    iget-object v6, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$mediaType:Lrip/moth/cocoonshell/ui/screen/MediaType;
+
+    iget-object v7, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$db:Lrip/moth/cocoonshell/data/local/CocoonDatabase;
+
+    iget-object v8, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$context:Landroid/content/Context;
+
+    iget-object p1, p0, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt$MediaPickerScreen$2$1;->$selectedSource$delegate:Landroidx/compose/runtime/MutableState;
+
+    invoke-static {p1}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt;->access$MediaPickerScreen$lambda$2(Landroidx/compose/runtime/MutableState;)Lrip/moth/cocoonshell/ui/screen/MediaSource;
+
+    move-result-object v9
+
+    invoke-static/range {v1 .. v9}, Lrip/moth/cocoonshell/ui/screen/MediaPickerScreenKt;->access$MediaPickerScreen$loadMedia(Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableState;Landroidx/compose/runtime/MutableIntState;Lrip/moth/cocoonshell/data/model/Game;Lrip/moth/cocoonshell/ui/screen/MediaType;Lrip/moth/cocoonshell/data/local/CocoonDatabase;Landroid/content/Context;Lrip/moth/cocoonshell/ui/screen/MediaSource;)V
+
+    .line 318
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p1
+
+    .line 316
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
