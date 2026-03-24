@@ -1958,7 +1958,7 @@
     const/16 v1, 0x80
 
     .line 1464
-    invoke-static {v0, v1}, Lrip/moth/cocoonshell/ui/component/appdrawer/AppDrawerKt;->drawableToUnmaskedBitmap(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/Bitmap;
+    invoke-static {v0}, Lrip/moth/cocoonshell/utils/AppIconCacheKt;->drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -10318,7 +10318,7 @@
     const/16 v1, 0x80
 
     .line 1240
-    invoke-static {v0, v1}, Lrip/moth/cocoonshell/ui/component/appdrawer/AppDrawerKt;->drawableToUnmaskedBitmap(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/Bitmap;
+    invoke-static {v0}, Lrip/moth/cocoonshell/utils/AppIconCacheKt;->drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 

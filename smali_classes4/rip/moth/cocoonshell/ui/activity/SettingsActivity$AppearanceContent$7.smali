@@ -487,10 +487,84 @@
 .end method
 
 .method private static final invoke$lambda$7$lambda$6()Lkotlin/Unit;
-    .locals 1
+    .locals 5
 
     .line 2110
+    sget-object v0, Lrip/moth/cocoonshell/data/AppState;->INSTANCE:Lrip/moth/cocoonshell/data/AppState;
+
+    invoke-virtual {v0}, Lrip/moth/cocoonshell/data/AppState;->getDialogSourceActivity()Landroidx/compose/runtime/MutableState;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    if-nez v0, :cond_has_ctx
+
+    invoke-static {}, Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application;
+
+    move-result-object v0
+
+    :cond_has_ctx
+    if-nez v0, :cond_show_picker
+
     invoke-static {}, Lrip/moth/cocoonshell/data/AppState;->cycleDockSize()V
+
+    goto :cond_done
+
+    :cond_show_picker
+    new-instance v1, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    const-string v0, "Number of slots in dock"
+
+    invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [Ljava/lang/CharSequence;
+
+    const/4 v2, 0x0
+
+    const-string v3, "4 slots"
+
+    aput-object v3, v0, v2
+
+    const/4 v2, 0x1
+
+    const-string v3, "5 slots"
+
+    aput-object v3, v0, v2
+
+    const/4 v2, 0x2
+
+    const-string v3, "6 slots"
+
+    aput-object v3, v0, v2
+
+    const/4 v2, 0x3
+
+    const-string v3, "7 slots"
+
+    aput-object v3, v0, v2
+
+    new-instance v2, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AppearanceContent$7$DockSlotDialogClickListener;
+
+    invoke-direct {v2}, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AppearanceContent$7$DockSlotDialogClickListener;-><init>()V
+
+    invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    :cond_done
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1068,9 +1142,9 @@
     .line 2106
     const-string v1, "more_horiz"
 
-    const-string v2, "Dock Icons Style"
+    const-string v2, "Dock Size"
 
-    const-string v5, "Customize dock icons appearance"
+    const-string v5, "Number of app slots in dock"
 
     const/4 v6, 0x1
 
@@ -1085,7 +1159,7 @@
 
     const-string v2, "Number of slots in dock"
 
-    const-string v5, "Cycle between 4 and 7 slots"
+    const-string v5, "Choose between 4 and 7 slots"
 
     invoke-static/range {v1 .. v11}, Lrip/moth/cocoonshell/ui/component/settings/SettingsComponentsKt;->NavigationMenuItem-egy_3UM(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/lang/String;ZZFLandroidx/compose/runtime/Composer;II)V
 

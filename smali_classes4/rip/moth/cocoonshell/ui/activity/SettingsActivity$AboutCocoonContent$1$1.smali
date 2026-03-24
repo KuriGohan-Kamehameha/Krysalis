@@ -625,6 +625,42 @@
 
     invoke-static/range {v0 .. v10}, Lrip/moth/cocoonshell/ui/activity/SettingsActivity;->access$AboutTeamMemberItem(Lrip/moth/cocoonshell/ui/activity/SettingsActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V
 
+    .line 2952
+    iget-object v0, p0, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AboutCocoonContent$1$1;->this$0:Lrip/moth/cocoonshell/ui/activity/SettingsActivity;
+
+    .line 2953
+    sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+
+    check-cast v1, Landroidx/compose/ui/Modifier;
+
+    const/4 v2, 0x3
+
+    iget-object v3, p0, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AboutCocoonContent$1$1;->$navState:Lrip/moth/cocoonshell/ui/component/settings/SettingsNavigationState;
+
+    invoke-static {v1, v2, v3}, Lrip/moth/cocoonshell/ui/component/settings/SettingsNavigationKt;->settingsItem(Landroidx/compose/ui/Modifier;ILrip/moth/cocoonshell/ui/component/settings/SettingsNavigationState;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v6
+
+    const v9, 0x1801b6
+
+    const/16 v10, 0x8
+
+    const-string v1, "Krysalis Fork"
+
+    const-string v2, "Forked from inssekt/CocoonFE"
+
+    const-string v3, "code"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v8, p2
+
+    invoke-static/range {v0 .. v10}, Lrip/moth/cocoonshell/ui/activity/SettingsActivity;->access$AboutTeamMemberItem(Lrip/moth/cocoonshell/ui/activity/SettingsActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V
+
     .line 2954
     iget-object v0, p0, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AboutCocoonContent$1$1;->this$0:Lrip/moth/cocoonshell/ui/activity/SettingsActivity;
 
@@ -682,7 +718,7 @@
 
     check-cast v1, Landroidx/compose/ui/Modifier;
 
-    const/4 v2, 0x3
+    const/4 v2, 0x4
 
     iget-object v3, p0, Lrip/moth/cocoonshell/ui/activity/SettingsActivity$AboutCocoonContent$1$1;->$navState:Lrip/moth/cocoonshell/ui/component/settings/SettingsNavigationState;
 

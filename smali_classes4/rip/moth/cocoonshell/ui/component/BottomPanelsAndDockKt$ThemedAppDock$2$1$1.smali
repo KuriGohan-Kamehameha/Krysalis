@@ -206,7 +206,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    const/4 v1, 0x7
+    sget v1, Lrip/moth/cocoonshell/data/AppState;->dockSize:I
 
     if-gt v0, v1, :cond_1
 

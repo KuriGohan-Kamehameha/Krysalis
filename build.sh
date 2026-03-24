@@ -119,6 +119,9 @@ with zipfile.ZipFile(upstream, 'r') as orig:
     with zipfile.ZipFile(output, 'w', compression=zipfile.ZIP_DEFLATED) as out:
         for item in keep:
             info = orig.getinfo(item)
+            # Native libs must be stored uncompressed for Android to extract them
+            if item.endswith('.so') or item.startswith('lib/'):
+                info.compress_type = zipfile.ZIP_STORED
             out.writestr(info, orig.read(item))
         for dex in dex_files:
             path = os.path.join(dex_dir, dex)
@@ -182,6 +185,17 @@ with zipfile.ZipFile(tmp_apk, 'r') as zf:
 os.remove(tmp_apk)
 print(f"  Signed APK: {os.path.getsize(apk)/1024/1024:.1f} MB")
 PYEOF
+
+# ── Zipalign ────────────────────────────────────────────────────────────────
+ZIPALIGN=$(find ~/Library/Android/sdk/build-tools -name zipalign 2>/dev/null | sort -V | tail -1)
+if [[ -n "$ZIPALIGN" ]]; then
+    log "Zipaligning APK..."
+    ALIGNED_APK="${OUTPUT_APK%.apk}-aligned.apk"
+    "$ZIPALIGN" -p 4 "$OUTPUT_APK" "$ALIGNED_APK"
+    mv "$ALIGNED_APK" "$OUTPUT_APK"
+else
+    log "WARNING: zipalign not found, skipping alignment"
+fi
 
 log ""
 log "✓ Build complete: $OUTPUT_APK"

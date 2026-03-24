@@ -2918,7 +2918,7 @@
 
     move/from16 v10, v22
 
-    const/4 v4, 0x7
+    sget v4, Lrip/moth/cocoonshell/data/AppState;->dockSize:I
 
     :goto_b
     if-ge v10, v4, :cond_26

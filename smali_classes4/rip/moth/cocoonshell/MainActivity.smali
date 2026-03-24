@@ -248,7 +248,7 @@
 
     move-result v2
 
-    goto :cond_0
+    if-nez v2, :cond_0
 
     .line 302
     new-instance v0, Landroid/content/Intent;

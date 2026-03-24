@@ -71,7 +71,7 @@
 
     if-gt p2, p1, :cond_0
 
-    const/4 p2, 0x7
+    sget p2, Lrip/moth/cocoonshell/data/AppState;->dockSize:I
 
     if-gt p1, p2, :cond_0
 
